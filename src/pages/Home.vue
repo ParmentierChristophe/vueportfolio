@@ -119,7 +119,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-top: 3em;
-        width: 90%;
+        width: 100%;
         justify-content: center;
         margin: 0 auto;
     }

@@ -12,7 +12,7 @@
         <div class="Mouse">
             <div class="Mouse__Img">
                 <a href="#section7">
-                    <img src="../assets/img/mouse.png" alt="">
+                    <img class="width-mouse" src="../assets/img/mouse.png" alt="">
                 </a>
             </div>
         </div>
@@ -168,6 +168,10 @@
 
     }
 
+    .width-mouse {
+        width: 50%;
+    }
+
 
     /* Safari 4.0 - 8.0 */
 
@@ -191,6 +195,75 @@
 
         50% {
             bottom: 5px;
+        }
+    }
+
+
+    @media screen and (max-width: 840px) {
+        .Head__Title {
+            font-size: 8vw;
+        }
+
+
+        .Head {
+            width: 100%;
+            padding-left: 3em;
+        }
+
+        .Header {
+            height: 90vh;
+        }
+
+        .Head__Subtitle {
+            font-size: 5vw;
+
+        }
+
+        .Head__Paragraph {
+            font-size: 4vw;
+            width: 50%;
+
+        }
+
+        .Head__Paragraph-link {
+            font-size: 4vw;
+
+        }
+    }
+
+
+        @media screen and (max-width: 500px) {
+        .Head__Title {
+            font-size: 12vw;
+        }
+
+        .Header {
+            height: 80vh;
+        }
+        .Head {
+            width: 100%;
+            padding-left: 2em;
+            height: 80vh;
+        }
+
+        .Head__Subtitle {
+            font-size: 6vw;
+
+        }
+
+        .Head__Paragraph {
+            font-size: 5vw;
+            width: 50%;
+
+        }
+
+        .Head__Paragraph-link {
+            font-size: 5vw;
+
+        }
+
+        .Mouse {
+            display: none;
         }
     }
 </style>

@@ -133,7 +133,9 @@
 
     .social-media {
         display: flex;
+        flex-wrap: wrap;
         text-decoration: none;
+        line-height: 3em;
         list-style: none;
         padding-left: 0;
     }
@@ -160,6 +162,15 @@
         font-weight: 400;
         font-size: 14px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+
+    @media screen and (max-width: 840px) {
+
+        .contact-mail {
+            font-size: 8vw;
+        }
     }
 </style>

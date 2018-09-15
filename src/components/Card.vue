@@ -43,7 +43,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
   display: grid;
   grid-template: 1fr 1fr;
-  margin: 30px;
+  margin: 20px;
   z-index: 2;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
