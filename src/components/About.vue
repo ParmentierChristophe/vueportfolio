@@ -116,10 +116,12 @@
 
     .contact-mail {
         background: -webkit-linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 7vh;
         text-decoration: none;
+        background-clip: text;
+        -webkit-background-clip: text;
+
 
     }
 

@@ -73,13 +73,15 @@
     .Head__Title {
         /* Christophe Parmentier: */
         background: -webkit-linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 900;
         font-size: 72px;
         margin-bottom: 0px;
         line-height: 0.9em;
         padding-top: 120px;
+        background-clip: text;
+        -webkit-background-clip: text;
+
     }
 
     .Head__Subtitle {
@@ -232,7 +234,7 @@
     }
 
 
-        @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
         .Head__Title {
             font-size: 12vw;
         }
@@ -240,6 +242,7 @@
         .Header {
             height: 80vh;
         }
+
         .Head {
             width: 100%;
             padding-left: 2em;
