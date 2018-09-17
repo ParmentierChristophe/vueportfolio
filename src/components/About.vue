@@ -120,7 +120,7 @@
         font-size: 7vh;
         text-decoration: none;
         background-clip: text;
-        -webkit-background-clip: text;
+        -webkit-background-clip: text !important;
 
 
     }

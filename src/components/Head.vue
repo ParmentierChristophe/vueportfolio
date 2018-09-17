@@ -79,8 +79,7 @@
         margin-bottom: 0px;
         line-height: 0.9em;
         padding-top: 120px;
-        background-clip: text;
-        -webkit-background-clip: text;
+        -webkit-background-clip: text !important;
 
     }
 
