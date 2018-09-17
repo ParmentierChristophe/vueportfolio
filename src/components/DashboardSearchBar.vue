@@ -10,7 +10,7 @@
 </script>
 <style scoped>
     .search-container {
-        width: 80%;
+        width: 100%;
         position: fixed;
         right: 20%;
         top: 0;

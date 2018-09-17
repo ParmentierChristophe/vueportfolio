@@ -2,7 +2,7 @@
 
 
     <div class="Card">
-        <img src="../assets/img/bg2.jpg" />
+        <img src="../assets/img/test.jpg" />
         <h3>Title of project</h3>
         <p>type</p>
     </div>
@@ -35,7 +35,7 @@
 
 .Card {
   width: 300px;
-  height: 225px;
+  height: 300px;
   padding: 20px;
   position: relative;
   overflow: hidden;
@@ -45,7 +45,7 @@
   grid-template: 1fr 1fr;
   margin: 20px;
   z-index: 2;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)!important;
 }
 
 .Card:hover {
@@ -56,12 +56,14 @@
 .Card:hover img {
   transform: translateY(-20px);
   height: 120%;
+  width: 120%;
 }
 
 .Card img {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
-  height: 110%;
   z-index: 3;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }

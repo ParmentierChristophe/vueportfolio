@@ -2,7 +2,6 @@
     <div class="bg">
         <DashboardSearchBar />
 
-        <SidebarRight />
         <div class="board">
             <SideBarLeft class="sidebarLeft"/>
             <AdminCardDashboard class="dash" />
@@ -14,7 +13,6 @@
 
 <script>
     import DashboardSearchBar from "../components/DashboardSearchBar";
-    import SidebarRight from "../components/SidebarRight";
     import AdminCardDashboard from '../components/AdminCardDashboard';  
     import SideBarLeft from '../components/SideBarLeft';
 
@@ -23,7 +21,6 @@
 
         components: {
             DashboardSearchBar,
-            SidebarRight,
             AdminCardDashboard,
             SideBarLeft
 
@@ -46,6 +43,6 @@
     }
 
     .dash {
-        width: 60%;
+        width: 100%;
     }
 </style>

@@ -22,9 +22,10 @@
 
 <style scoped>
     .form-container {
-        padding: 15px;
+        padding-top: 15px;
         background-color: #f2f2f2;
         min-height: 100vh;
+        overflow: hidden;
     }
 
     .form {
