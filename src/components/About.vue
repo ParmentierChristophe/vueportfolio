@@ -17,7 +17,7 @@
             </div>
             <div class="footer">
                 <p>Copyright © Christophe Parmentier 2018. All Rights Reserved.</p>
-                <p>Made with love.</p>
+                <p>Made with <span class="love-text">love</span></p>
             </div>
         </div>
 
@@ -109,7 +109,9 @@
         padding-top: 0.5em;
     }
 
-
+    .love-text {
+        color: #FF92A9;
+    }
     .contact-me {
         font-weight: lighter;
     }
