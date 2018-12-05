@@ -174,7 +174,7 @@
     @media screen and (max-width: 840px) {
 
         .contact-mail {
-            font-size: 8vw;
+            font-size: 5vw;
         }
     }
 </style>

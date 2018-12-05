@@ -1,6 +1,7 @@
 <template>
     <div class="global-container">
 
+        
 
         <div class="row-card">
             <div class="card-container">
@@ -22,7 +23,7 @@
                         </g>
                     </g>
                 </svg>
-                <img src="../assets/img/msg.png" alt="">
+                <img src="../../assets/img/msg.png" alt="">
                 <p class="number-Card-Admin">123</p>
                 <p class="title-Card-Admin">Projets</p>
             </div>
@@ -46,7 +47,7 @@
                         </g>
                     </g>
                 </svg>
-                <img src="../assets/img/msg.png" alt="">
+                <img src="../../assets/img/msg.png" alt="">
                 <p class="number-Card-Admin">13</p>
                 <p class="title-Card-Admin">Messages</p>
             </div>
@@ -70,12 +71,12 @@
                         </g>
                     </g>
                 </svg>
-                <img src="../assets/img/msg.png" alt="">
+                <img src="../../assets/img/msg.png" alt="">
                 <p class="title-Card-Admin">Edit my profil</p>
             </div>
 
 
-                        <div class="card-container">
+            <div class="card-container">
 
                 <svg width="216px" height="104px" viewBox="0 0 216 104" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,7 +95,7 @@
                         </g>
                     </g>
                 </svg>
-                <img src="../assets/img/msg.png" alt="">
+                <img src="../../assets/img/msg.png" alt="">
                 <p class="title-Card-Admin">Add Project</p>
             </div>
         </div>
@@ -127,9 +128,7 @@
 
     .row-card {
         display: flex;
-        margin-top: 5em;
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .card-container {

@@ -10,7 +10,8 @@
   "dependencies": {
     "scrollreveal": "^4.0.0",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue2-scrollspy": "^2.3.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-rc.12",

@@ -1,5 +1,5 @@
 <template>
-    <ul class="nav">
+    <ul class="nav" v-scroll-spy-active="{class: 'is-active'}" v-scroll-spy-link>
         <li class="is-active">Home</li>
         <li class="pdl2">Work</li>
         <li class="pdl2">Contact</li>

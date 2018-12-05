@@ -1,35 +1,63 @@
 <template>
     <div class="body">
-        <Nav ref="Nav" />
+        <!-- <Nav ref="Nav" /> -->
+        <ul ref="Nav" class="nav" v-scroll-spy-active="{class: 'is-active'}" v-scroll-spy-link>
+            <li :key="item" v-for="item in titles" class="pdl2">
+                <a>{{item}}</a>
+            </li>
+            <li class="pdl2">
+                <a>
 
-        <Head ref="Head" />
-
-        <h2 id="section7" class="subtitle" ref="Work">Work</h2>
-        <section class="Cards" ref="cards">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+                    Blog
+                </a>
+            </li>
 
 
-        </section>
+            <!-- <li class="is-active">Home</li>
+            <li class="pdl2">Work</li>
+            <li class="pdl2">Contact</li>
+            <li class="pdl2">Blog</li> -->
+        </ul>
+        <div v-scroll-spy>
 
-
-        <section class="AboutSection">
-            <div class="bottomWave">
-
-                <Wave />
-            </div>
             <div>
-                <About />
+
+                <Head ref="Head" />
 
             </div>
 
-        </section>
 
+            <div>
+                <h2 id="section7" class="subtitle" ref="Work">Work</h2>
+                <section class="Cards" ref="cards">
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+
+
+                </section>
+
+            </div>
+
+            <div>
+                <section class="AboutSection">
+                    <div class="bottomWave">
+
+                        <Wave />
+                    </div>
+                    <div>
+                        <About />
+
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
 
     </div>
 </template>
@@ -54,8 +82,14 @@
             Wave
         },
 
+
         data() {
             return {
+                titles: [
+                    'Home',
+                    'Works',
+                    'Contact',
+                ],
                 sr: null,
             };
         },
@@ -87,7 +121,7 @@
                     reset: false,
 
                 });
-                this.sr.reveal(this.$refs.Nav.$el, {
+                this.sr.reveal(this.$refs.Nav, {
                     origin: 'top',
                     distance: '70px',
                     opacity: 1,
@@ -103,6 +137,48 @@
 </script>
 
 <style scoped>
+    .nav {
+        position: fixed;
+        z-index: 24;
+        width: 100%;
+        margin: 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        justify-content: center;
+        padding-left: 0px;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    li {
+        list-style: none;
+        font-weight: bold;
+        color: rgb(131, 131, 131);
+    }
+
+    li a {
+        cursor: pointer;
+    }
+
+    .pdl2 {
+        margin-left: 2em;
+
+    }
+
+    .is-active {
+        color: #6E7FF3;
+    }
+
+
+
+
+
+
+
+
+
     .body {
         overflow-x: hidden;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
